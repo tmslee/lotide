@@ -13,12 +13,12 @@ const assertArraysEqual = function(arr1, arr2){
   console.log(message);
 }
 
-const middle = function(arr){
+const middle = function(arr) {
   if(arr.length  < 3) return [];
   else{
-    let mid = Math.ceil(arr.length/2) - 1;
+    let mid = Math.ceil(arr.length / 2) - 1;
     let even = arr.length % 2 === 0; 
-    return even ? arr.slice(mid, mid+2) : arr.slice(mid, mid+1);
+    return even ? arr.slice(mid, mid + 2) : arr.slice(mid, mid + 1);
   }
 }
 
