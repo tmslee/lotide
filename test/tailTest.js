@@ -1,5 +1,5 @@
-const assert = require('chai').assert;
-const tail = require('../tail');
+let assert = require('chai').assert;
+let lotide = require('../index');
 
 let testArr;
 

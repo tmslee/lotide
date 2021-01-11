@@ -1,5 +1,5 @@
-const assert = require('chai').assert;
-const head = require('../head');
+let assert = require('chai').assert;
+let lotide = require('../index');
 
 describe('#head', () => {
   it('returns 1 for [1,2,3]', () => {

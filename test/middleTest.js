@@ -1,5 +1,5 @@
-const assert = require('chai').assert;
-const middle = require('../middle');
+let assert = require('chai').assert;
+let lotide = require('../index');
 
 describe('#middle', ()=>{
   it('should return [] for empty array', ()=>{

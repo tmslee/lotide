@@ -1,9 +1,10 @@
-const assertArraysEqual = require('../assertArraysEqual');
+let assert = require('chai').assert;
+let lotide = require('../index');
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], []);
-assertArraysEqual([1, 2, 3], [1]);
-assertArraysEqual([1, 2, 3], [1, 2, 3, 4]);
-assertArraysEqual([1, 2, 3], [0, 2, 3]);
-assertArraysEqual([1, 2, 3], ['1', '2', '3']);
-assertArraysEqual([1, 2, 3], '[1, 2, 3]');
+lotide.assertArraysEqual([1, 2, 3], [1, 2, 3]);
+lotide.assertArraysEqual([1, 2, 3], []);
+lotide.assertArraysEqual([1, 2, 3], [1]);
+lotide.assertArraysEqual([1, 2, 3], [1, 2, 3, 4]);
+lotide.assertArraysEqual([1, 2, 3], [0, 2, 3]);
+lotide.assertArraysEqual([1, 2, 3], ['1', '2', '3']);
+lotide.assertArraysEqual([1, 2, 3], '[1, 2, 3]');

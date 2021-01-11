@@ -1,8 +1,8 @@
-const assertEqual = require('../assertEqual');
+let assert = require('chai').assert;
+let lotide = require('../index');
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("aaa", "aaa");
-assertEqual(1,10);
-assertEqual(1, "1");
-
+lotide.assertEqual("Lighthouse Labs", "Bootcamp");
+lotide.assertEqual(1, 1);
+lotide.assertEqual("aaa", "aaa");
+lotide.assertEqual(1,10);
+lotide.assertEqual(1, "1");
