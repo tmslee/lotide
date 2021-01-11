@@ -1,16 +1,24 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
 let testArr;
-testArr = ['a', 'a', 'b', 'c', 'd'];
-//testArr = [];
-//testArr = [1];
 
-let beforeTailLen = testArr.length;
-const res = tail(testArr);
+describe('#tail', ()=>{
+  it('should return ["a", "b", "c", "d"] when input is ["a","a","b","c","d"] and the original array must be unchanged', ()=>{
+    testArr = ['a', 'a', 'b', 'c', 'd'];
+    assert.deepEqual(tail(testArr), ['a', 'b', 'c', 'd']);
+    assert.deepEqual(testArr, ['a', 'a', 'b', 'c', 'd']);
+  });
 
-assertEqual(res.length, Math.max(0, testArr.length - 1));
-assertEqual(testArr.length, beforeTailLen);
-for (let i = 0; i < res.length; i++) {
-  assertEqual(res[i], testArr[i + 1]);
-}
+  it('should return empty array when input is empty, and original array must be unchanged', ()=>{
+    testArr = [];
+    assert.deepEqual(tail(testArr), []);
+    assert.deepEqual(testArr, []);
+  });
+
+  it('should reutnr empty array when input has 1 element, and original array must be unchanged', ()=>{
+    testArr = [1];
+    assert.deepEqual(tail(testArr), []);
+    assert.deepEqual(testArr, [1]);
+  });
+});
