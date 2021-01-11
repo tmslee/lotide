@@ -1,7 +1,7 @@
 let assert = require('chai').assert;
 let lotide = require('../index');
 
-describe('#countLetters', ()=>{
+describe('#without', ()=>{
   it('works with empty imputs no nesting', ()=>{
     assert.deepEqual(lotide.without([], []), []);
     assert.deepEqual(lotide.without([], [1, 0, -1, '2', 'three']), []);

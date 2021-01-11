@@ -17,7 +17,7 @@ const testObj1 = {
   "Akelarre":  { butt: 3 }
 };
 
-describe('#countLetters', ()=>{
+describe('#findKey', ()=>{
   it('works with callback stars === 3 ', ()=>{
     assert.strictEqual(lotide.findKey(testObj, x=>x.stars===3), "Akaleri");
   });

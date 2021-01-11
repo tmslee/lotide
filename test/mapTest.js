@@ -6,7 +6,7 @@ const test2 = ['a', 'b', 'c', 'd'];
 const test3 = ['', '', ''];
 const words = ["ground", "control", "to", "major", "tom"];
 
-describe('#countLetters', ()=>{
+describe('#map', ()=>{
   it('works with empty array', ()=>{
     assert.deepEqual(lotide.map(test1, word=>word[0]), []);
   });

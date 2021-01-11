@@ -4,7 +4,7 @@ let lotide = require('../index');
 const test1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const test2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 
-describe('#countLetters', ()=>{
+describe('#takeUntil', ()=>{
   it('works with number conditionals', ()=>{
     assert.deepEqual(lotide.takeUntil(test1, x=>x<0), [ 1, 2, 5, 7, 2 ]);
   });

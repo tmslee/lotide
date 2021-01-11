@@ -1,7 +1,7 @@
 let assert = require('chai').assert;
 let lotide = require('../index');
 
-describe('#countLetters', ()=>{
+describe('#eqArrays', ()=>{
   it('two identically arrays should return true', ()=>{
     assert.strictEqual(lotide.eqArrays([1,2,3],[1,2,3]), true);
   });

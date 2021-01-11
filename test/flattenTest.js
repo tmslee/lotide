@@ -1,7 +1,7 @@
 let assert = require('chai').assert;
 let lotide = require('../index');
 
-describe('#countLetters', ()=>{
+describe('#flatten', ()=>{
   it('works with nesting of varying size and depth', ()=>{
     assert.deepEqual(lotide.flatten([1,2,3,[4,5], [6,7]]), [1,2,3,4,5,6,7]);
   });

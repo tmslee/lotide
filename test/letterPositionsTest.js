@@ -1,7 +1,7 @@
 let assert = require('chai').assert;
 let lotide = require('../index');
 
-describe('#countLetters', ()=>{
+describe('#letterPositions', ()=>{
   it('passes individual letter check', ()=>{
     let ans = {
       h:[0],

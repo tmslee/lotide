@@ -10,7 +10,7 @@ const bestTVShowsByGenre = {
   "edgeCase2":"" 
 };
 
-describe('#countLetters', ()=>{
+describe('#findKeyByValue', ()=>{
   it('the write should return drama', ()=>{
     assert.strictEqual(lotide.findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
   });

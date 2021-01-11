@@ -15,7 +15,7 @@ const firstNames = [
 
 const result1 = lotide.countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-describe('#countLetters', ()=>{
+describe('#countOnly', ()=>{
   it('Jason should be 1', ()=>{
     assert.strictEqual(result1["Jason"], 1);
   });
