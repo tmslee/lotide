@@ -1,5 +1,5 @@
 const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) return false;
+  if(!(Array.isArray(arr1) && Array.isArray) || arr1.length !== arr2.length) return false;
   else {
     for (let i = 0; i < arr1.length; i++) {
       if (Array.isArray(arr1[i]) && Array.isArray(arr2[i])) {

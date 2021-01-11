@@ -1,12 +1,6 @@
 let assert = require('chai').assert;
 let lotide = require('../index');
 
-describe('#countLetters', ()=>{
-  it('', ()=>{
-
-  });
-});
-
 const firstNames = [
   "Karl",
   "Salima",
@@ -19,9 +13,19 @@ const firstNames = [
   "Joe"
 ];
 
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+const result1 = lotide.countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+describe('#countLetters', ()=>{
+  it('Jason should be 1', ()=>{
+    assert.strictEqual(result1["Jason"], 1);
+  });
+  it('Karima should be undefined', ()=>{
+    assert.strictEqual(result1["Karima"], undefined);
+  });
+  it('Fang should be 2', ()=>{
+    assert.strictEqual(result1["Fang"], 2);
+  });
+  it('Agouhanna should be undefined', ()=>{
+    assert.strictEqual(result1["Agouhanna"], undefined);
+  });
+});

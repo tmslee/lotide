@@ -1,15 +1,22 @@
 let assert = require('chai').assert;
 let lotide = require('../index');
 
-describe('#countLetters', ()=>{
-  it('', ()=>{
+let counts = lotide.countLetters('lighthouse in the house');
 
+describe('#countLetters', ()=>{
+  it('should be 1 l', ()=>{
+    assert.strictEqual(counts.l, 1);
+  });
+  it('should be 2 i', ()=>{
+    assert.strictEqual(counts.i, 2);
+  });
+  it('should be 1 g', ()=>{
+    assert.strictEqual(counts.g, 1);
+  });
+  it('should be 4 h', ()=>{
+    assert.strictEqual(counts.h, 4);
+  });
+  it('should be 2 t', ()=>{
+    assert.strictEqual(counts.t, 2);
   });
 });
-
-let counts = countLetters('lighthouse in the house');
-assertEqual(counts.l, 1);
-assertEqual(counts.i, 2);
-assertEqual(counts.g, 1);
-assertEqual(counts.h, 4);
-assertEqual(counts.t, 2);
